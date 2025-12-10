@@ -1,20 +1,23 @@
 #include<stdio.h>
 int main(){
-    int n;
-    printf("How many Students ??\n");
-    scanf("%d", &n);
-    
-    char name[n][50];
-    printf("Enter Name\n");
+    int cricket[3][2][1];
 
-    for(int i=0;i<=n;i++){
-        printf("%c", i+1);
-        fgets(name[i], sizeof(name[i]), stdin);
+    printf("Match Records\n");
+
+    for(int i=0; i<3; i++){
+        printf("Tournament %d: \n", i+1);
+
+        for(int j=0; j<2; j++){
+            printf("Over %d: \n", j+1);
+
+            for(int k=0; k<1; k++){
+                printf("Runs: ", k+1);
+                scanf("%d", &cricket[i]);
+                printf("wickets: ", k+1);
+                scanf("%d", &cricket[i]);
+            }
+        }
     }
 
-    printf("\nYou Entered\n");
-    for(int i=0; i<=n; i++){
-        printf("%d.%s", i+1, name[i]);
-    }
     return 0;
 }
