@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Aryan Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+nav h1{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:50px 10%;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 30px #38bdf8;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h2{
+    font-size:28px;
+    color:#38bdf8;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-text p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* Section */
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+/* Skills */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+/* Certificates */
+
+.certificates{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.cert-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.cert-box:hover{
+    transform:scale(1.04);
+    background:#334155;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+    <h1>Adarsh Aryan</h1>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+
+<div class="hero" id="about">
+
+    <img src="pic.jpg.png" alt="Profile Photo">
+
+    <div class="hero-text">
+        <h2>Hello, I'm</h2>
+        <h1>Adarsh Aryan</h1>
+
+        <p>
+            BCA Student passionate about Web Development, AI Tools,
+            Programming and Technology. I love building modern websites
+            and continuously learning new tech skills.
+        </p>
+
+        <a href="mailto:adarsharyan836@gmail.com" class="btn">
+            Contact Me
+        </a>
+    </div>
+
+</div>
+
+<!-- Skills Section -->
+
+<section id="skills">
+
+    <h1 class="title">My Skills</h1>
+
+    <div class="skills">
+
+        <div class="skill-box">
+            <h2>HTML</h2>
+        </div>
+
+        <div class="skill-box">
+            <h2>CSS</h2>
+        </div>
+
+        <div class="skill-box">
+            <h2>JavaScript</h2>
+        </div>
+
+        <div class="skill-box">
+            <h2>Python</h2>
+        </div>
+
+        <div class="skill-box">
+            <h2>C Programming</h2>
+        </div>
+
+        <div class="skill-box">
+            <h2>Communication</h2>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Certificates -->
+
+<section id="certificates">
+
+    <h1 class="title">Certifications</h1>
+
+    <div class="certificates">
+
+        <div class="cert-box">
+            <h2>Generative AI Mastermind</h2>
+        </div>
+
+        <div class="cert-box">
+            <h2>AI Tools Workshop</h2>
+        </div>
+
+        <div class="cert-box">
+            <h2>Outskill Certificate</h2>
+        </div>
+
+        <div class="cert-box">
+            <h2>be10x Certificate</h2>
+        </div>
+
+        <div class="cert-box">
+            <h2>HP Life Certificate</h2>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+    <h1 class="title">Contact</h1>
+
+    <div class="contact">
+        <p>Email : adarsharyan836@gmail.com</p>
+
+        <a href="mailto:adarsharyan836@gmail.com" class="btn">
+            Send Email
+        </a>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+    © 2026 Adarsh Aryan | Portfolio Website
+</footer>
+
+</body>
+</html>
